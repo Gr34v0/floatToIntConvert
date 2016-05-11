@@ -17,7 +17,7 @@ def unconvert(rh, mx, mn):
 	
 	convertVar = 65536/(mx - mn)
 	
-	result = round(rh + mn/(65536/(mx-mn)))
+	result = round((rh/convertVar) + mn)
 	
 	print(result)
 	
